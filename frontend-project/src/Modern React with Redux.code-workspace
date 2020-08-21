@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\jsx\\node_modules"
+		},
+		{
+			"path": "..\\public"
+		}
+	],
+	"settings": {}
+}

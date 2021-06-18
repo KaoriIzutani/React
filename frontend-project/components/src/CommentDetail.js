@@ -1,5 +1,5 @@
 import React from 'react';
-import faker from 'faker';
+
 
 /*This is your reusable component*/
 
@@ -7,19 +7,19 @@ const CommentDetail = (props) => {
     return (
        <div className= "comment">
         <a href = "/" className= "avatar">
-          <img alt= "avatar" src= {faker.image.avatar()}/>
+          <img alt= "avatar" src= {props.avatar}/>
         </a>
         <div className= "content">
         <a href= "/" className= "author">
         {props.author} 
         </a>
         <div className="metadata">
-        <span className="date"> Today at 6:07 PM </span>
+        <span className="date"> {props.timePosted} </span>
         </div>
-        <div className="text"> Nice blog post!</div>
+        <div className="text"> {props.newComment} </div>
         </div>  
          </div>
-    );
+    ); //{props.author} is an example of a child component.
 };
 
 export default CommentDetail; /*This export statement means that 
